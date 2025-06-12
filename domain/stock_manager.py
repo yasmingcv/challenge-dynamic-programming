@@ -60,16 +60,9 @@ class StockManager:
         pos = self.busca_binaria(novo_item['itemName'])
         # Insere o novo item na posição correta
         self.estoque.insert(pos, novo_item)
-        
+    
+    
     def mostrar_estoque(self):
-        # "id": 9,
-        # "itemName": "Atadura de Crepom 10cm",
-        # "category": "Curativos",
-        # "quantity": 200,
-        # "location": "Prateleira B2",
-        # "expiryDate": "2027-09-01",
-        # "unity_price": 0.45,
-        # "ideal_quantity": 300
         print("\nEstoque atual:")
         for item in self.estoque:
             print(20 * "-")
@@ -82,3 +75,33 @@ class StockManager:
             print(f"Preço Unitário: R$ {item['unity_price']:.2f}")
             print(f"Quantidade Ideal: {item['ideal_quantity']}")
             
+    def itens_criticos(self):
+        criticos = []
+
+        for item in self.estoque:
+            atual = item['quantity']
+            ideal = item['ideal_quantity']
+
+            if atual < ideal:
+                desvio = ideal - atual
+                criticos.append({
+                    'item': item,
+                    'desvio': desvio,
+                    'relacao': f"{atual}/{ideal}"
+                })
+        
+        # Ordena os itens críticos por maior desvio
+        criticos.sort(key=lambda x: x['desvio'], reverse=True)
+        print("\nItens críticos:")
+        for critico in criticos:
+            item = critico['item']
+            print(20 * "-")
+            print(f"ID: {item['id']}")
+            print(f"Nome: {item['itemName']}")
+            print(f"Categoria: {item['category']}")
+            print(f"Quantidade Atual: {item['quantity']}")
+            print(f"Quantidade Ideal: {item['ideal_quantity']}")
+            print(f"Desvio: {critico['desvio']}")
+            print(f"Relação: {critico['relacao']}")
+            print(f"Localização: {item['location']}")
+                

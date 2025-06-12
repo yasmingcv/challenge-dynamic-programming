@@ -13,7 +13,8 @@ while True:
     print("1. Mostrar estoque")
     print("2. Buscar item por nome")
     print("3. Adicionar novo item")
-    print("4. Sair")
+    print("4. Mostrar itens críticos")
+    print("5. Sair")
     
     opcao = input("Escolha uma opção: ")
 
@@ -57,6 +58,8 @@ while True:
             print("Erro ao adicionar item:", e)
 
     elif opcao == "4":
+        estoque.itens_criticos()
+    elif opcao == "5":
         print("Encerrando o programa.")
         break
 
