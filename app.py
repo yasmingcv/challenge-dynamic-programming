@@ -11,11 +11,16 @@ estoque = StockManager(data)
 while True:
     print("\n--- Menu Estoque ---")
     print("1. Mostrar estoque")
-    print("2. Buscar item por nome")
+    print("2. Buscar item por nome (binária)")
     print("3. Adicionar novo item")
     print("4. Mostrar itens críticos")
-    print("5. Sair")
-    
+    print("5. Fila de reposição (itens abaixo do ideal)")
+    print("6. Pilha de validade (ordem de vencimento)")
+    print("7. Busca sequencial por nome")
+    print("8. Ordenar estoque por nome (Merge Sort)")
+    print("9. Ordenar estoque por nome (Quick Sort)")
+    print("0. Sair")
+
     opcao = input("Escolha uma opção: ")
 
     if opcao == "1":
@@ -59,10 +64,54 @@ while True:
 
     elif opcao == "4":
         estoque.itens_criticos()
+
     elif opcao == "5":
+        fila = estoque.fila_de_reposicao()
+        print("\nFila de reposição (itens abaixo do ideal):")
+        for item in fila:
+            print(20 * "-")
+            print(f"ID: {item['id']}")
+            print(f"Nome: {item['itemName']}")
+            print(f"Quantidade: {item['quantity']}")
+            print(f"Ideal: {item['ideal_quantity']}")
+
+    elif opcao == "6":
+        pilha = estoque.pilha_de_validade()
+        print("\nPilha de validade (ordem de vencimento):")
+        for item in pilha:
+            print(20 * "-")
+            print(f"ID: {item['id']}")
+            print(f"Nome: {item['itemName']}")
+            print(f"Validade: {item['expiryDate']}")
+
+    elif opcao == "7":
+        nome = input("Digite o nome do item a ser buscado (sequencial): ")
+        item = estoque.busca_sequencial_nome(nome)
+        if item:
+            print("\nItem encontrado (busca sequencial):")
+            print(20 * "-")
+            print(f"ID: {item['id']}")
+            print(f"Nome: {item['itemName']}")
+            print(f"Categoria: {item['category']}")
+            print(f"Quantidade: {item['quantity']}")
+            print(f"Localização: {item['location']}")
+            print(f"Data de Validade: {item['expiryDate']}")
+            print(f"Preço Unitário: R$ {item['unity_price']:.2f}")
+            print(f"Quantidade Ideal: {item['ideal_quantity']}")
+        else:
+            print("Item não encontrado.")
+
+    elif opcao == "8":
+        estoque.ordenar_estoque_merge()
+        print("Estoque ordenado por nome usando Merge Sort.")
+
+    elif opcao == "9":
+        estoque.ordenar_estoque_quick()
+        print("Estoque ordenado por nome usando Quick Sort.")
+
+    elif opcao == "0":
         print("Encerrando o programa.")
         break
 
     else:
         print("Opção inválida. Tente novamente.")
-        
