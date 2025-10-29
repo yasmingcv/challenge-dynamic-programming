@@ -267,11 +267,11 @@ challenge-dynamic-programming/
 
 ### Programação Dinâmica
 
-| Método | Complexidade Tempo | Complexidade Espaço | Observações |
-|--------|-------------------|---------------------|-------------|
-| Recursivo | O(2^n) | O(n) pilha | Impraticável para n > 20 |
-| Memoization | O(n × W) | O(n × W) | Cache em dicionário |
-| Iterativo | O(n × W) | O(n × W) | Tabela DP, mais eficiente |
+| Método | Complexidade Tempo | Complexidade Espaço |
+|--------|-------------------|---------------------|
+| Recursivo | O(2^n) | O(n) pilha |
+| Memoization | O(n × W) | O(n × W) |
+| Iterativo | O(n × W) | O(n × W) |
 
 Onde:
 - `n` = número de itens críticos (abaixo do ideal)
@@ -286,23 +286,6 @@ Onde:
 | Insertion Sort | O(n²) | Pilha de validade (pequeno n) |
 | Merge Sort | O(n log n) | Ordenação estável |
 | Quick Sort | O(n log n) | Ordenação rápida (média) |
-
----
-
-## 🎓 Conceitos de Programação Dinâmica Aplicados
-
-### ✅ Subestrutura Ótima
-A solução ótima para o problema completo pode ser construída a partir de soluções ótimas de subproblemas.
-
-### ✅ Subproblemas Sobrepostos
-Os mesmos subproblemas são resolvidos múltiplas vezes na versão recursiva pura.
-
-### ✅ Memoization vs Tabulação
-- **Memoization**: Top-down, resolve subproblemas sob demanda
-- **Tabulação**: Bottom-up, resolve todos os subproblemas sistematicamente
-
-### ✅ Reconstrução de Solução
-Após preencher a tabela DP, percorremos de trás para frente identificando quais itens foram selecionados.
 
 ---
 
