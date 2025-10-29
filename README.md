@@ -1,9 +1,107 @@
 # 🔬 Sistema de Gerenciamento de Estoque Laboratorial
 
-Este projeto foi desenvolvido como parte da disciplina de **Dynamic Programming** do curso de **Engenharia de Software** da **FIAP**, sendo a solução proposta para o **Challenge 2025**, em colaboração com a **DASA**.
+Este projeto foi desenvolvido como parte da disciplina de **Programação Dinâmica** do curso de **Engenharia de Software** da **FIAP**, sendo a solução proposta para o **Challenge 2025**, em colaboração com a **DASA**.
 
-Nosso sistema simula o **controle de estoque em laboratórios**, otimizando a gestão de suprimentos e materiais. A aplicação utiliza **busca binária** para diversas funcionalidades, como adicionar novos itens e ordenar o estoque, garantindo eficiência e precisão nas operações.
+Nosso sistema simula o **controle de estoque em hospitais e farmácias**, implementando algoritmos de **Programação Dinâmica** para otimização de reabastecimento de medicamentos, materiais hospitalares e suprimentos médicos. O sistema também utiliza estruturas de dados avançadas (pilhas, filas, busca binária) para garantir eficiência nas operações de gerenciamento.
 
+---
+
+#### **Definição dos Componentes:**
+
+**Estados:**
+- `dp[i][w]` = benefício máximo obtido considerando os primeiros `i` itens com orçamento `w` disponível
+- Cada estado representa uma decisão acumulada sobre quais itens reabastecer
+
+**Decisões:**
+- Para cada item crítico `i`: **reabastecer** ou **não reabastecer**
+- Decisão baseada na relação custo-benefício e orçamento disponível
+
+**Função de Transição:**
+```
+dp[i][w] = max(
+    dp[i-1][w],                           // não reabastecer item i
+    dp[i-1][w - custo[i]] + beneficio[i]  // reabastecer item i
+)
+```
+Onde:
+- `custo[i]` = déficit × preço unitário
+- `beneficio[i]` = déficit × preço × (1 + criticidade) × 10
+
+**Função Objetivo:**
+- **Maximizar:** Benefício total do reabastecimento
+- **Restrição:** Custo total ≤ Orçamento disponível
+- **Objetivo:** Selecionar o subconjunto ótimo de itens para reabastecer
+
+**Casos Base:**
+- `dp[0][w] = 0` para todo `w` (sem itens, benefício = 0)
+- `dp[i][0] = 0` para todo `i` (sem orçamento, benefício = 0)
+
+---
+
+## 📊 Três Implementações de Programação Dinâmica
+
+O projeto implementa **três versões** do algoritmo, todas produzindo **resultados idênticos**:
+
+### 1️⃣ Versão Recursiva Pura
+```python
+def _pd_recursivo(itens, n, capacidade):
+    # Caso base
+    if n == 0 or capacidade == 0:
+        return 0
+    
+    # Recursão: decidir incluir ou não incluir item
+    if itens[n-1]['custo'] > capacidade:
+        return _pd_recursivo(itens, n-1, capacidade)
+    
+    incluir = beneficio[n-1] + _pd_recursivo(itens, n-1, capacidade - custo[n-1])
+    nao_incluir = _pd_recursivo(itens, n-1, capacidade)
+    
+    return max(incluir, nao_incluir)
+```
+- **Complexidade:** O(2^n) - exponencial
+- **Uso:** Demonstração conceitual da recorrência
+- **Limitação:** Impraticável para n grande devido a recomputações
+
+### 2️⃣ Versão Memoization (Top-Down)
+```python
+def _pd_memoization(itens, n, capacidade, memo):
+    # Verifica cache
+    if (n, capacidade) in memo:
+        return memo[(n, capacidade)]
+    
+    # Caso base
+    if n == 0 or capacidade == 0:
+        return 0
+    
+    # Calcula e armazena resultado
+    resultado = # ... lógica de decisão
+    memo[(n, capacidade)] = resultado
+    return resultado
+```
+- **Complexidade:** O(n × W) - onde W é o orçamento
+- **Uso:** Recursão otimizada com cache de subproblemas
+- **Vantagem:** Calcula apenas subproblemas necessários
+
+### 3️⃣ Versão Iterativa (Bottom-Up)
+```python
+def _pd_iterativo(itens, capacidade):
+    n = len(itens)
+    dp = [[0 for _ in range(capacidade + 1)] for _ in range(n + 1)]
+    
+    # Preenche tabela bottom-up
+    for i in range(1, n + 1):
+        for w in range(1, capacidade + 1):
+            if custo[i-1] > w:
+                dp[i][w] = dp[i-1][w]
+            else:
+                dp[i][w] = max(dp[i-1][w], 
+                              dp[i-1][w - custo[i-1]] + beneficio[i-1])
+    
+    return dp[n][capacidade]
+```
+- **Complexidade:** O(n × W) - mesma da memoization
+- **Uso:** Recomendado para produção
+- **Vantagem:** Sem overhead de recursão, uso eficiente de memória
 
 ---
 
@@ -24,35 +122,42 @@ Nosso sistema simula o **controle de estoque em laboratórios**, otimizando a ge
 3. Execute o programa principal:
 
     ```bash
-    py ./app.py
+    python app.py
     ```
 
 ---
 
 ## 🛠️ Funcionalidades
 
-Explore as principais capacidades do nosso sistema:
+### 🎯 Programação Dinâmica (Core do Projeto)
+* **Otimização Recursiva**: Implementação recursiva pura com recorrência explícita
+* **Otimização com Memoization**: Top-down com cache (dicionário) de subproblemas
+* **Otimização Iterativa**: Bottom-up com tabela DP, O(n × W)
+* **Comparação de Métodos**: Valida que as três versões produzem resultados idênticos
+* **Reconstrução de Solução**: Backtracking para identificar itens selecionados
+* **Análise de Benefício**: Calcula criticidade baseada em deficit/ideal
 
+### 📦 Estruturas de Dados Auxiliares
+* **Cadastro de itens**: Adicione novos medicamentos e materiais ao estoque
+* **Visualização completa**: Exiba todos os itens do estoque com detalhes
+* **Busca binária**: Busca eficiente O(log n) em lista ordenada
+* **Busca sequencial**: Busca linear O(n) em lista não ordenada
+* **Itens críticos**: Identifique produtos abaixo do estoque ideal
 
-* **Cadastro de itens:** Adicione novos materiais e suprimentos ao seu estoque com facilidade.
-* **Ordenação alfabética:** Mantenha seu estoque sempre organizado, facilitando a visualização e a busca.
-* **Listagem de itens críticos:** Identifique rapidamente os itens com estoque abaixo do ideal, garantindo que você nunca fique sem o essencial.
-* **Busca inteligente:** Encontre qualquer item no estoque pelo nome de forma rápida e eficiente (busca binária e busca sequencial).
-* **Fila de reposição:** Visualize os itens que precisam ser repostos, em ordem de chegada, facilitando o planejamento de compras.
-* **Pilha de validade:** Veja os itens ordenados por data de validade, do que vence primeiro ao que vence por último, auxiliando no controle de vencimentos.
-* **Busca sequencial:** Alternativa à busca binária, permite encontrar itens mesmo em listas não ordenadas.
-* **Ordenação por Merge Sort:** Ordene o estoque por nome utilizando o algoritmo Merge Sort, garantindo estabilidade e eficiência.
-* **Ordenação por Quick Sort:** Ordene o estoque por nome utilizando o algoritmo Quick Sort, para alta performance em grandes volumes de dados.
+### 📚 Algoritmos de Ordenação
+* **Fila de reposição (FIFO)**: Itens que precisam ser repostos, ordem de chegada
+* **Pilha de validade (LIFO)**: Itens ordenados por vencimento (Insertion Sort)
+* **Merge Sort**: Ordenação estável O(n log n)
+* **Quick Sort**: Ordenação in-place O(n log n) médio
 
 ---
 
 ## 🖥️ Exemplo de Execução
 
 ```text
-Inicializando o Gerenciador de Estoque...
-Estoque carregado e ordenado com sucesso.
-
---- Menu Estoque ---
+======================================================================
+MENU GERENCIADOR DE ESTOQUE
+======================================================================
 1. Mostrar estoque
 2. Buscar item por nome (binária)
 3. Adicionar novo item
@@ -62,37 +167,163 @@ Estoque carregado e ordenado com sucesso.
 7. Busca sequencial por nome
 8. Ordenar estoque por nome (Merge Sort)
 9. Ordenar estoque por nome (Quick Sort)
+10. Otimizar reabastecimento - Método RECURSIVO
+11. Otimizar reabastecimento - Método MEMOIZATION
+12. Otimizar reabastecimento - Método ITERATIVO
+13. Comparar todos os métodos de PD
+
 0. Sair
-Escolha uma opção: 2
-Digite o nome do item a ser buscado: Tubo de Ensaio de Vidro 15ml
 
-Item encontrado:
---------------------
-ID: 7
-Nome: Tubo de Ensaio de Vidro 15ml
-Categoria: Vidraria
-Quantidade: 300
-Localização: Armário F6
-Data de Validade: None
-Preço Unitário: R$ 0.60
-Quantidade Ideal: 400
+Escolha uma opção: 13
 
+======================================================================
+COMPARAÇÃO DE MÉTODOS
+======================================================================
+
+Digite o orçamento disponível (R$): 1000
+
+Executando método: RECURSIVO
+  Benefício Máximo: 15840
+  Custo Total: R$ 997.00
+  Itens Reabastecidos: 8/42
+
+Executando método: MEMOIZATION
+  Benefício Máximo: 15840
+  Custo Total: R$ 997.00
+  Itens Reabastecidos: 8/42
+
+Executando método: ITERATIVO
+  Benefício Máximo: 15840
+  Custo Total: R$ 997.00
+  Itens Reabastecidos: 8/42
+
+======================================================================
+VALIDAÇÃO DOS RESULTADOS
+======================================================================
+✓ TODOS OS MÉTODOS PRODUZEM RESULTADOS IDÊNTICOS!
+  Benefício: 15840
+  Custo: R$ 997.00
+  Itens: 8
 ```
 
-## Estrutura do projeto
+---
+
+## 📊 Base de Dados
+
+O arquivo `data.json` contém **50 itens** realistas de estoque hospitalar/farmácia:
+
+### Categorias Principais:
+- **Medicamentos**: Analgésicos, Antibióticos, Anti-hipertensivos, Antidiabéticos, Corticoides
+- **Soluções**: Soro Fisiológico, Soro Glicosado  
+- **Materiais Hospitalares**: Luvas, Máscaras, Seringas, Agulhas, Cateteres, Gazes
+- **Antissépticos**: Álcool 70%, Clorexidina, Povidine
+- **Controlados**: Diazepam, Morfina, Tramadol, Clonazepam
+- **Equipamentos**: Termômetros, Esfigmomanômetros, Estetoscópios
+- **Diagnóstico**: Testes COVID-19, Gravidez, Glicosímetro
+- **Gases Medicinais**: Oxigênio
+
+### Estrutura de um Item:
+```json
+{
+  "id": 1,
+  "itemName": "Paracetamol 500mg",
+  "category": "Analgésicos",
+  "quantity": 150,
+  "ideal_quantity": 500,
+  "unity_price": 0.35,
+  "location": "Prateleira A1 - Farmácia",
+  "expiryDate": "2026-03-15"
+}
+```
+
+### Cenários para Teste de PD:
+- **Itens com alto déficit**: Máscaras (1500/5000), Seringas (250/1500)
+- **Itens caros**: Oxigênio (R$ 180,00), Insulina (R$ 45,00)
+- **Diferentes faixas de orçamento**: R$ 500, R$ 1000, R$ 2000, R$ 5000
+- **Múltiplas combinações ótimas**: Para análise de backtracking
+
+---
+
+## 📁 Estrutura do Projeto
 
 ```text
-│   app.py                     -- Arquivo principal.
-│   data.json                  -- Dados de exemplo do estoque em formato JSON.
-│   README.md                  -- Documentação do projeto.
+challenge-dynamic-programming/
 │
-└───domain
-    └───stock_manager.py       -- Classe responsável pela lógica central de gerenciamento do estoque.
+├── app.py                      # Interface interativa com menu
+├── data.json                   # 50 itens de estoque hospitalar
+├── README.md                   # Documentação completa
+│
+└── domain/
+    └── stock_manager.py        # Classe StockManager
+                                # - Três implementações de PD
+                                # - Reconstrução de solução
+                                # - Validação de resultados
+                                # - Estruturas auxiliares
 ```
+
+---
+
+## 🔬 Análise de Complexidade
+
+### Programação Dinâmica
+
+| Método | Complexidade Tempo | Complexidade Espaço | Observações |
+|--------|-------------------|---------------------|-------------|
+| Recursivo | O(2^n) | O(n) pilha | Impraticável para n > 20 |
+| Memoization | O(n × W) | O(n × W) | Cache em dicionário |
+| Iterativo | O(n × W) | O(n × W) | Tabela DP, mais eficiente |
+
+Onde:
+- `n` = número de itens críticos (abaixo do ideal)
+- `W` = orçamento disponível (convertido para centavos)
+
+### Algoritmos Auxiliares
+
+| Algoritmo | Complexidade | Uso no Projeto |
+|-----------|-------------|----------------|
+| Busca Sequencial | O(n) | Busca em lista não ordenada |
+| Busca Binária | O(log n) | Busca em lista ordenada |
+| Insertion Sort | O(n²) | Pilha de validade (pequeno n) |
+| Merge Sort | O(n log n) | Ordenação estável |
+| Quick Sort | O(n log n) | Ordenação rápida (média) |
+
+---
+
+## 🎓 Conceitos de Programação Dinâmica Aplicados
+
+### ✅ Subestrutura Ótima
+A solução ótima para o problema completo pode ser construída a partir de soluções ótimas de subproblemas.
+
+### ✅ Subproblemas Sobrepostos
+Os mesmos subproblemas são resolvidos múltiplas vezes na versão recursiva pura.
+
+### ✅ Memoization vs Tabulação
+- **Memoization**: Top-down, resolve subproblemas sob demanda
+- **Tabulação**: Bottom-up, resolve todos os subproblemas sistematicamente
+
+### ✅ Reconstrução de Solução
+Após preencher a tabela DP, percorremos de trás para frente identificando quais itens foram selecionados.
+
+---
+
+## 🧪 Validação e Testes
+
+### Método de Validação Implementado:
+1. Executa os **três métodos** com o mesmo orçamento
+2. Compara **benefício máximo**, **custo total** e **itens selecionados**
+3. Valida que todos produzem **resultados idênticos**
+4. Garante **corretude matemática** da implementação
+
+### Execute o Teste:
+- Escolha a opção **13** no menu
+- Digite um orçamento (ex: 1000)
+- Observe a execução e validação automática
+
+
 ## 👥 Integrantes
 
-- David Murillo de Oliveira Soares (RM 559078)
-- Felipe Cerboncini Cordeiro (554909)
-- Lucas Serrano Rocco (RM 555170)
-- Pedro Henrique Martins Alves dos Santos (558107)
-- Yasmin Gonçalves Coelho (RM 559147)
+- **David Murillo de Oliveira Soares** (RM 559078)
+- **Felipe Cerboncini Cordeiro** (RM 554909)
+- **Lucas Serrano Rocco** (RM 555170)
+- **Pedro Henrique Martins Alves dos Santos** (RM 558107)
+- **Yasmin Gonçalves Coelho** (RM 559147)
