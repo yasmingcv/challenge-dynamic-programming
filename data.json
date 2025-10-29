@@ -1,1002 +1,502 @@
 [
-    {
-        "id": 1,
-        "itemName": "Seringa de Insulina 1ml",
-        "category": "Seringas",
-        "quantity": 250,
-        "location": "Armário A1",
-        "expiryDate": "2026-12-31",
-        "unity_price": 0.35,
-        "ideal_quantity": 300
-    },
-    {
-        "id": 2,
-        "itemName": "Gaze Estéril 7.5x7.5cm",
-        "category": "Curativos",
-        "quantity": 500,
-        "location": "Prateleira B2",
-        "expiryDate": "2027-05-20",
-        "unity_price": 0.10,
-        "ideal_quantity": 600
-    },
-    {
-        "id": 3,
-        "itemName": "Paracetamol 500mg",
-        "category": "Analgésicos",
-        "quantity": 1000,
-        "location": "Gaveta C3",
-        "expiryDate": "2025-11-15",
-        "unity_price": 0.20,
-        "ideal_quantity": 1200
-    },
-    {
-        "id": 4,
-        "itemName": "Agulha Hipodérmica 25/7",
-        "category": "Agulhas",
-        "quantity": 1500,
-        "location": "Armário A1",
-        "expiryDate": "2028-01-31",
-        "unity_price": 0.12,
-        "ideal_quantity": 1800
-    },
-    {
-        "id": 5,
-        "itemName": "Luvas de Procedimento (M)",
-        "category": "EPI",
-        "quantity": 800,
-        "location": "Caixa D4",
-        "expiryDate": null,
-        "unity_price": 0.18,
-        "ideal_quantity": 1000
-    },
-    {
-        "id": 6,
-        "itemName": "Alcool 70% 1L",
-        "category": "Antissépticos",
-        "quantity": 50,
-        "location": "Prateleira E5",
-        "expiryDate": "2026-08-10",
-        "unity_price": 2.50,
-        "ideal_quantity": 80
-    },
-    {
-        "id": 7,
-        "itemName": "Tubo de Ensaio de Vidro 15ml",
-        "category": "Vidraria",
-        "quantity": 300,
-        "location": "Armário F6",
-        "expiryDate": null,
-        "unity_price": 0.60,
-        "ideal_quantity": 400
-    },
-    {
-        "id": 8,
-        "itemName": "Ibuprofeno 400mg",
-        "category": "Anti-inflamatórios",
-        "quantity": 600,
-        "location": "Gaveta C3",
-        "expiryDate": "2026-04-22",
-        "unity_price": 0.22,
-        "ideal_quantity": 800
-    },
-    {
-        "id": 9,
-        "itemName": "Atadura de Crepom 10cm",
-        "category": "Curativos",
-        "quantity": 200,
-        "location": "Prateleira B2",
-        "expiryDate": "2027-09-01",
-        "unity_price": 0.45,
-        "ideal_quantity": 300
-    },
-    {
-        "id": 10,
-        "itemName": "Máscara Cirúrgica Descartável",
-        "category": "EPI",
-        "quantity": 2000,
-        "location": "Caixa D4",
-        "expiryDate": null,
-        "unity_price": 0.08,
-        "ideal_quantity": 2500
-    },
-    {
-        "id": 11,
-        "itemName": "Dipirona Sódica 500mg/ml Gotas",
-        "category": "Analgésicos",
-        "quantity": 150,
-        "location": "Gaveta C3",
-        "expiryDate": "2025-10-30",
-        "unity_price": 0.30,
-        "ideal_quantity": 200
-    },
-    {
-        "id": 12,
-        "itemName": "Seringa 5ml",
-        "category": "Seringas",
-        "quantity": 400,
-        "location": "Armário A1",
-        "expiryDate": "2027-02-14",
-        "unity_price": 0.40,
-        "ideal_quantity": 500
-    },
-    {
-        "id": 13,
-        "itemName": "Algodão Hidrófilo 500g",
-        "category": "Curativos",
-        "quantity": 80,
-        "location": "Prateleira B2",
-        "expiryDate": null,
-        "unity_price": 1.80,
-        "ideal_quantity": 120
-    },
-    {
-        "id": 14,
-        "itemName": "Amoxicilina 500mg",
-        "category": "Antibióticos",
-        "quantity": 300,
-        "location": "Refrigerador G7",
-        "expiryDate": "2025-09-18",
-        "unity_price": 0.50,
-        "ideal_quantity": 400
-    },
-    {
-        "id": 15,
-        "itemName": "Placa de Petri 90x15mm",
-        "category": "Consumíveis",
-        "quantity": 1200,
-        "location": "Armário F6",
-        "expiryDate": null,
-        "unity_price": 0.25,
-        "ideal_quantity": 1500
-    },
-    {
-        "id": 16,
-        "itemName": "Termômetro Clínico Digital",
-        "category": "Equipamentos",
-        "quantity": 30,
-        "location": "Gaveta H8",
-        "expiryDate": null,
-        "unity_price": 8.50,
-        "ideal_quantity": 40
-    },
-    {
-        "id": 17,
-        "itemName": "Fita Micropore 2.5cm x 10m",
-        "category": "Curativos",
-        "quantity": 500,
-        "location": "Prateleira B2",
-        "expiryDate": "2028-03-05",
-        "unity_price": 0.90,
-        "ideal_quantity": 600
-    },
-    {
-        "id": 18,
-        "itemName": "Lâmina de Bisturi Nº 11",
-        "category": "Instrumentais",
-        "quantity": 600,
-        "location": "Caixa I9",
-        "expiryDate": "2029-01-15",
-        "unity_price": 0.35,
-        "ideal_quantity": 800
-    },
-    {
-        "id": 19,
-        "itemName": "Coletor de Material Perfurocortante 7L",
-        "category": "Descarte",
-        "quantity": 100,
-        "location": "Área de Descarte J10",
-        "expiryDate": null,
-        "unity_price": 2.20,
-        "ideal_quantity": 150
-    },
-    {
-        "id": 20,
-        "itemName": "Soro Fisiológico 0.9% 500ml",
-        "category": "Soluções",
-        "quantity": 250,
-        "location": "Prateleira E5",
-        "expiryDate": "2026-07-20",
-        "unity_price": 1.10,
-        "ideal_quantity": 350
-    },
-    {
-        "id": 21,
-        "itemName": "Loratadina 10mg",
-        "category": "Antialérgicos",
-        "quantity": 400,
-        "location": "Gaveta K11",
-        "expiryDate": "2026-06-12",
-        "unity_price": 0.28,
-        "ideal_quantity": 500
-    },
-    {
-        "id": 22,
-        "itemName": "Agulha para Coleta de Sangue a Vácuo 21G",
-        "category": "Agulhas",
-        "quantity": 3000,
-        "location": "Armário A1",
-        "expiryDate": "2027-11-25",
-        "unity_price": 0.15,
-        "ideal_quantity": 3500
-    },
-    {
-        "id": 23,
-        "itemName": "Tubo para Coleta de Sangue a Vácuo (Tampa Vermelha)",
-        "category": "Consumíveis",
-        "quantity": 2500,
-        "location": "Armário L12",
-        "expiryDate": "2026-10-01",
-        "unity_price": 0.18,
-        "ideal_quantity": 3000
-    },
-    {
-        "id": 24,
-        "itemName": "Cefalexina 500mg",
-        "category": "Antibióticos",
-        "quantity": 200,
-        "location": "Refrigerador G7",
-        "expiryDate": "2025-08-30",
-        "unity_price": 0.48,
-        "ideal_quantity": 300
-    },
-    {
-        "id": 25,
-        "itemName": "Esparadrapo Impermeável 5cm x 4.5m",
-        "category": "Curativos",
-        "quantity": 300,
-        "location": "Prateleira B2",
-        "expiryDate": "2028-04-18",
-        "unity_price": 1.20,
-        "ideal_quantity": 400
-    },
-    {
-        "id": 26,
-        "itemName": "Jaleco Branco (M)",
-        "category": "EPI",
-        "quantity": 50,
-        "location": "Vestiário M13",
-        "expiryDate": null,
-        "unity_price": 18.00,
-        "ideal_quantity": 70
-    },
-    {
-        "id": 27,
-        "itemName": "Glicose 50% 10ml",
-        "category": "Soluções",
-        "quantity": 150,
-        "location": "Prateleira E5",
-        "expiryDate": "2026-03-15",
-        "unity_price": 0.65,
-        "ideal_quantity": 200
-    },
-    {
-        "id": 28,
-        "itemName": "Oculos de Proteção",
-        "category": "EPI",
-        "quantity": 100,
-        "location": "Caixa D4",
-        "expiryDate": null,
-        "unity_price": 6.50,
-        "ideal_quantity": 120
-    },
-    {
-        "id": 29,
-        "itemName": "Pipeta Pasteur 3ml",
-        "category": "Consumíveis",
-        "quantity": 5000,
-        "location": "Caixa N14",
-        "expiryDate": null,
-        "unity_price": 0.07,
-        "ideal_quantity": 6000
-    },
-    {
-        "id": 30,
-        "itemName": "Captopril 25mg",
-        "category": "Anti-hipertensivos",
-        "quantity": 800,
-        "location": "Gaveta O15",
-        "expiryDate": "2026-09-28",
-        "unity_price": 0.23,
-        "ideal_quantity": 1000
-    },
-    {
-        "id": 31,
-        "itemName": "Seringa 10ml",
-        "category": "Seringas",
-        "quantity": 350,
-        "location": "Armário A1",
-        "expiryDate": "2027-08-11",
-        "unity_price": 0.45,
-        "ideal_quantity": 500
-    },
-    {
-        "id": 32,
-        "itemName": "Luvas Cirúrgicas Estéreis (7.5)",
-        "category": "EPI",
-        "quantity": 200,
-        "location": "Caixa D4",
-        "expiryDate": "2027-10-10",
-        "unity_price": 0.35,
-        "ideal_quantity": 300
-    },
-    {
-        "id": 33,
-        "itemName": "Cloreto de Sódio P.A. 500g",
-        "category": "Reagentes",
-        "quantity": 20,
-        "location": "Armário de Reagentes P16",
-        "expiryDate": "2028-12-01",
-        "unity_price": 4.80,
-        "ideal_quantity": 30
-    },
-    {
-        "id": 34,
-        "itemName": "Béquer de Vidro 250ml",
-        "category": "Vidraria",
-        "quantity": 100,
-        "location": "Armário F6",
-        "expiryDate": null,
-        "unity_price": 2.20,
-        "ideal_quantity": 120
-    },
-    {
-        "id": 35,
-        "itemName": "Hidroclorotiazida 25mg",
-        "category": "Diuréticos",
-        "quantity": 500,
-        "location": "Gaveta O15",
-        "expiryDate": "2026-05-25",
-        "unity_price": 0.19,
-        "ideal_quantity": 600
-    },
-    {
-        "id": 36,
-        "itemName": "Lenço de Papel",
-        "category": "Higiene",
-        "quantity": 100,
-        "location": "Bancada Q17",
-        "expiryDate": null,
-        "unity_price": 0.05,
-        "ideal_quantity": 200
-    },
-    {
-        "id": 37,
-        "itemName": "Azitromicina 500mg",
-        "category": "Antibióticos",
-        "quantity": 250,
-        "location": "Refrigerador G7",
-        "expiryDate": "2025-12-20",
-        "unity_price": 0.60,
-        "ideal_quantity": 350
-    },
-    {
-        "id": 38,
-        "itemName": "Papel Filtro Quantitativo",
-        "category": "Consumíveis",
-        "quantity": 1000,
-        "location": "Gaveta R18",
-        "expiryDate": null,
-        "unity_price": 0.12,
-        "ideal_quantity": 1200
-    },
-    {
-        "id": 39,
-        "itemName": "Sinvastatina 20mg",
-        "category": "Hipolipemiantes",
-        "quantity": 700,
-        "location": "Gaveta S19",
-        "expiryDate": "2026-11-30",
-        "unity_price": 0.32,
-        "ideal_quantity": 900
-    },
-    {
-        "id": 40,
-        "itemName": "Tubo de Ensaio com Tampa de Rosca 10ml",
-        "category": "Vidraria",
-        "quantity": 400,
-        "location": "Armário F6",
-        "expiryDate": null,
-        "unity_price": 0.80,
-        "ideal_quantity": 500
-    },
-    {
-        "id": 41,
-        "itemName": "Agua Oxigenada 10 volumes 100ml",
-        "category": "Antissépticos",
-        "quantity": 80,
-        "location": "Prateleira E5",
-        "expiryDate": "2026-01-25",
-        "unity_price": 1.10,
-        "ideal_quantity": 120
-    },
-    {
-        "id": 42,
-        "itemName": "Pinça Anatômica 14cm",
-        "category": "Instrumentais",
-        "quantity": 40,
-        "location": "Caixa I9",
-        "expiryDate": null,
-        "unity_price": 3.50,
-        "ideal_quantity": 60
-    },
-    {
-        "id": 43,
-        "itemName": "Metformina 850mg",
-        "category": "Antidiabéticos",
-        "quantity": 1000,
-        "location": "Gaveta T20",
-        "expiryDate": "2027-04-10",
-        "unity_price": 0.25,
-        "ideal_quantity": 1200
-    },
-    {
-        "id": 44,
-        "itemName": "Gaze Não Estéril 500g",
-        "category": "Curativos",
-        "quantity": 150,
-        "location": "Prateleira B2",
-        "expiryDate": null,
-        "unity_price": 1.20,
-        "ideal_quantity": 200
-    },
-    {
-        "id": 45,
-        "itemName": "Seringa 20ml",
-        "category": "Seringas",
-        "quantity": 300,
-        "location": "Armário A1",
-        "expiryDate": "2027-12-01",
-        "unity_price": 0.60,
-        "ideal_quantity": 400
-    },
-    {
-        "id": 46,
-        "itemName": "Escova de Assepsia com Cerdas de Nylon",
-        "category": "Higiene",
-        "quantity": 200,
-        "location": "Bancada Q17",
-        "expiryDate": null,
-        "unity_price": 1.80,
-        "ideal_quantity": 250
-    },
-    {
-        "id": 47,
-        "itemName": "Omeprazol 20mg",
-        "category": "Antiulcerosos",
-        "quantity": 900,
-        "location": "Gaveta U21",
-        "expiryDate": "2026-02-28",
-        "unity_price": 0.27,
-        "ideal_quantity": 1000
-    },
-    {
-        "id": 48,
-        "itemName": "Lamínula para Microscópio 24x24mm",
-        "category": "Consumíveis",
-        "quantity": 2000,
-        "location": "Gaveta V22",
-        "expiryDate": null,
-        "unity_price": 0.05,
-        "ideal_quantity": 2500
-    },
-    {
-        "id": 49,
-        "itemName": "Acido Acetilsalicílico 100mg",
-        "category": "Antiagregantes Plaquetários",
-        "quantity": 1500,
-        "location": "Gaveta C3",
-        "expiryDate": "2025-07-14",
-        "unity_price": 0.18,
-        "ideal_quantity": 1800
-    },
-    {
-        "id": 50,
-        "itemName": "Frasco Coletor de Urina 80ml",
-        "category": "Consumíveis",
-        "quantity": 800,
-        "location": "Armário L12",
-        "expiryDate": null,
-        "unity_price": 0.60,
-        "ideal_quantity": 1000
-    },
-    {
-        "id": 51,
-        "itemName": "Etanol Absoluto P.A. 1L",
-        "category": "Reagentes",
-        "quantity": 30,
-        "location": "Armário de Reagentes P16",
-        "expiryDate": "2029-05-10",
-        "unity_price": 7.50,
-        "ideal_quantity": 40
-    },
-    {
-        "id": 52,
-        "itemName": "Tesoura Cirúrgica Reta 14.5cm",
-        "category": "Instrumentais",
-        "quantity": 35,
-        "location": "Caixa I9",
-        "expiryDate": null,
-        "unity_price": 4.20,
-        "ideal_quantity": 50
-    },
-    {
-        "id": 53,
-        "itemName": "Losartana Potássica 50mg",
-        "category": "Anti-hipertensivos",
-        "quantity": 1200,
-        "location": "Gaveta O15",
-        "expiryDate": "2027-06-20",
-        "unity_price": 0.33,
-        "ideal_quantity": 1400
-    },
-    {
-        "id": 54,
-        "itemName": "Propipetador de Borracha (Pera)",
-        "category": "Equipamentos",
-        "quantity": 60,
-        "location": "Gaveta H8",
-        "expiryDate": null,
-        "unity_price": 2.80,
-        "ideal_quantity": 80
-    },
-    {
-        "id": 55,
-        "itemName": "Prednisona 20mg",
-        "category": "Corticosteroides",
-        "quantity": 350,
-        "location": "Gaveta W23",
-        "expiryDate": "2026-08-19",
-        "unity_price": 0.40,
-        "ideal_quantity": 500
-    },
-    {
-        "id": 56,
-        "itemName": "Swab com Álcool",
-        "category": "Antissépticos",
-        "quantity": 4000,
-        "location": "Prateleira E5",
-        "expiryDate": "2027-03-25",
-        "unity_price": 0.09,
-        "ideal_quantity": 5000
-    },
-    {
-        "id": 57,
-        "itemName": "Furosemida 40mg",
-        "category": "Diuréticos",
-        "quantity": 600,
-        "location": "Gaveta O15",
-        "expiryDate": "2026-10-05",
-        "unity_price": 0.22,
-        "ideal_quantity": 800
-    },
-    {
-        "id": 58,
-        "itemName": "Microtubo de Centrifugação 1.5ml (Eppendorf)",
-        "category": "Consumíveis",
-        "quantity": 10000,
-        "location": "Caixa X24",
-        "expiryDate": null,
-        "unity_price": 0.04,
-        "ideal_quantity": 12000
-    },
-    {
-        "id": 59,
-        "itemName": "Dexametasona 4mg",
-        "category": "Corticosteroides",
-        "quantity": 280,
-        "location": "Gaveta W23",
-        "expiryDate": "2026-04-30",
-        "unity_price": 0.38,
-        "ideal_quantity": 400
-    },
-    {
-        "id": 60,
-        "itemName": "Campo Cirúrgico Fenestrado Estéril",
-        "category": "Consumíveis",
-        "quantity": 150,
-        "location": "Armário Y25",
-        "expiryDate": "2028-02-20",
-        "unity_price": 2.10,
-        "ideal_quantity": 200
-    },
-    {
-        "id": 61,
-        "itemName": "Iodopovidona 10% Solução Aquosa 100ml",
-        "category": "Antissépticos",
-        "quantity": 120,
-        "location": "Prateleira E5",
-        "expiryDate": "2026-11-11",
-        "unity_price": 1.30,
-        "ideal_quantity": 150
-    },
-    {
-        "id": 62,
-        "itemName": "Estante para Tubos de Ensaio",
-        "category": "Equipamentos",
-        "quantity": 70,
-        "location": "Bancada Z26",
-        "expiryDate": null,
-        "unity_price": 5.00,
-        "ideal_quantity": 90
-    },
-    {
-        "id": 63,
-        "itemName": "Atenolol 50mg",
-        "category": "Anti-hipertensivos",
-        "quantity": 750,
-        "location": "Gaveta O15",
-        "expiryDate": "2027-01-18",
-        "unity_price": 0.29,
-        "ideal_quantity": 900
-    },
-    {
-        "id": 64,
-        "itemName": "Cuba Rim de Inox",
-        "category": "Instrumentais",
-        "quantity": 90,
-        "location": "Armário AA27",
-        "expiryDate": null,
-        "unity_price": 7.80,
-        "ideal_quantity": 120
-    },
-    {
-        "id": 65,
-        "itemName": "Salbutamol Spray 100mcg",
-        "category": "Broncodilatadores",
-        "quantity": 180,
-        "location": "Gaveta BB28",
-        "expiryDate": "2025-10-10",
-        "unity_price": 2.60,
-        "ideal_quantity": 250
-    },
-    {
-        "id": 66,
-        "itemName": "Sonda de Aspiração Traqueal Nº 12",
-        "category": "Sondas",
-        "quantity": 250,
-        "location": "Caixa CC29",
-        "expiryDate": "2028-06-22",
-        "unity_price": 1.90,
-        "ideal_quantity": 300
-    },
-    {
-        "id": 67,
-        "itemName": "Ranitidina 150mg",
-        "category": "Antiulcerosos",
-        "quantity": 450,
-        "location": "Gaveta U21",
-        "expiryDate": "2026-03-03",
-        "unity_price": 0.26,
-        "ideal_quantity": 600
-    },
-    {
-        "id": 68,
-        "itemName": "Papel Toalha Interfolhado",
-        "category": "Higiene",
-        "quantity": 300,
-        "location": "Bancada Q17",
-        "expiryDate": null,
-        "unity_price": 0.03,
-        "ideal_quantity": 400
-    },
-    {
-        "id": 69,
-        "itemName": "Enalapril 10mg",
-        "category": "Anti-hipertensivos",
-        "quantity": 950,
-        "location": "Gaveta O15",
-        "expiryDate": "2027-07-07",
-        "unity_price": 0.31,
-        "ideal_quantity": 1200
-    },
-    {
-        "id": 70,
-        "itemName": "Garrote para Flebotomia",
-        "category": "Equipamentos",
-        "quantity": 130,
-        "location": "Gaveta H8",
-        "expiryDate": null,
-        "unity_price": 2.10,
-        "ideal_quantity": 150
-    },
-    {
-        "id": 71,
-        "itemName": "Fluoxetina 20mg",
-        "category": "Antidepressivos",
-        "quantity": 550,
-        "location": "Gaveta DD30",
-        "expiryDate": "2026-12-15",
-        "unity_price": 0.36,
-        "ideal_quantity": 700
-    },
-    {
-        "id": 72,
-        "itemName": "Coletor de Fezes com Pazinha",
-        "category": "Consumíveis",
-        "quantity": 650,
-        "location": "Armário L12",
-        "expiryDate": null,
-        "unity_price": 0.55,
-        "ideal_quantity": 800
-    },
-    {
-        "id": 73,
-        "itemName": "Hidróxido de Sódio P.A. 1kg",
-        "category": "Reagentes",
-        "quantity": 15,
-        "location": "Armário de Reagentes P16",
-        "expiryDate": "2030-01-20",
-        "unity_price": 9.00,
-        "ideal_quantity": 20
-    },
-    {
-        "id": 74,
-        "itemName": "Bandeja de Inox 22x12x1.5cm",
-        "category": "Instrumentais",
-        "quantity": 110,
-        "location": "Armário AA27",
-        "expiryDate": null,
-        "unity_price": 6.80,
-        "ideal_quantity": 130
-    },
-    {
-        "id": 75,
-        "itemName": "Diazepam 10mg",
-        "category": "Ansiolíticos",
-        "quantity": 320,
-        "location": "Armário Controlado EE31",
-        "expiryDate": "2026-09-09",
-        "unity_price": 0.42,
-        "ideal_quantity": 400
-    },
-    {
-        "id": 76,
-        "itemName": "Scalp para Infusão 23G",
-        "category": "Agulhas",
-        "quantity": 1000,
-        "location": "Armário A1",
-        "expiryDate": "2028-08-08",
-        "unity_price": 0.20,
-        "ideal_quantity": 1200
-    },
-    {
-        "id": 77,
-        "itemName": "Metoclopramida 10mg",
-        "category": "Antieméticos",
-        "quantity": 480,
-        "location": "Gaveta FF32",
-        "expiryDate": "2026-07-17",
-        "unity_price": 0.24,
-        "ideal_quantity": 600
-    },
-    {
-        "id": 78,
-        "itemName": "Proveta de Vidro 100ml",
-        "category": "Vidraria",
-        "quantity": 80,
-        "location": "Armário F6",
-        "expiryDate": null,
-        "unity_price": 1.60,
-        "ideal_quantity": 100
-    },
-    {
-        "id": 79,
-        "itemName": "Anlodipino 5mg",
-        "category": "Anti-hipertensivos",
-        "quantity": 1100,
-        "location": "Gaveta O15",
-        "expiryDate": "2027-08-28",
-        "unity_price": 0.27,
-        "ideal_quantity": 1300
-    },
-    {
-        "id": 80,
-        "itemName": "Saco para Lixo Hospitalar Branco 100L",
-        "category": "Descarte",
-        "quantity": 200,
-        "location": "Área de Descarte J10",
-        "expiryDate": null,
-        "unity_price": 0.90,
-        "ideal_quantity": 300
-    },
-    {
-        "id": 81,
-        "itemName": "Carbonato de Cálcio P.A. 500g",
-        "category": "Reagentes",
-        "quantity": 25,
-        "location": "Armário de Reagentes P16",
-        "expiryDate": "2028-10-12",
-        "unity_price": 3.20,
-        "ideal_quantity": 40
-    },
-    {
-        "id": 82,
-        "itemName": "Luva de Vinil (G)",
-        "category": "EPI",
-        "quantity": 700,
-        "location": "Caixa D4",
-        "expiryDate": null,
-        "unity_price": 0.16,
-        "ideal_quantity": 900
-    },
-    {
-        "id": 83,
-        "itemName": "Glibenclamida 5mg",
-        "category": "Antidiabéticos",
-        "quantity": 650,
-        "location": "Gaveta T20",
-        "expiryDate": "2026-11-05",
-        "unity_price": 0.21,
-        "ideal_quantity": 800
-    },
-    {
-        "id": 84,
-        "itemName": "Funil de Vidro 75mm",
-        "category": "Vidraria",
-        "quantity": 50,
-        "location": "Armário F6",
-        "expiryDate": null,
-        "unity_price": 1.10,
-        "ideal_quantity": 70
-    },
-    {
-        "id": 85,
-        "itemName": "Tramadol 50mg",
-        "category": "Analgésicos Opioides",
-        "quantity": 220,
-        "location": "Armário Controlado EE31",
-        "expiryDate": "2026-01-30",
-        "unity_price": 0.55,
-        "ideal_quantity": 300
-    },
-    {
-        "id": 86,
-        "itemName": "Espátula de Aço Inox",
-        "category": "Instrumentais",
-        "quantity": 70,
-        "location": "Caixa I9",
-        "expiryDate": null,
-        "unity_price": 2.10,
-        "ideal_quantity": 100
-    },
-    {
-        "id": 87,
-        "itemName": "Propranolol 40mg",
-        "category": "Anti-hipertensivos",
-        "quantity": 580,
-        "location": "Gaveta O15",
-        "expiryDate": "2027-02-22",
-        "unity_price": 0.28,
-        "ideal_quantity": 700
-    },
-    {
-        "id": 88,
-        "itemName": "Ponteira para Micropipeta 1000ul (Azul)",
-        "category": "Consumíveis",
-        "quantity": 8000,
-        "location": "Caixa GG33",
-        "expiryDate": null,
-        "unity_price": 0.03,
-        "ideal_quantity": 10000
-    },
-    {
-        "id": 89,
-        "itemName": "Codeína 30mg",
-        "category": "Analgésicos Opioides",
-        "quantity": 180,
-        "location": "Armário Controlado EE31",
-        "expiryDate": "2026-05-15",
-        "unity_price": 0.60,
-        "ideal_quantity": 250
-    },
-    {
-        "id": 90,
-        "itemName": "Lamparina a Álcool",
-        "category": "Equipamentos",
-        "quantity": 40,
-        "location": "Bancada Z26",
-        "expiryDate": null,
-        "unity_price": 4.50,
-        "ideal_quantity": 60
-    },
-    {
-        "id": 91,
-        "itemName": "Espironolactona 25mg",
-        "category": "Diuréticos",
-        "quantity": 380,
-        "location": "Gaveta O15",
-        "expiryDate": "2026-08-01",
-        "unity_price": 0.23,
-        "ideal_quantity": 500
-    },
-    {
-        "id": 92,
-        "itemName": "Agulha de Sutura 3-0 com Fio de Nylon",
-        "category": "Suturas",
-        "quantity": 220,
-        "location": "Caixa HH34",
-        "expiryDate": "2028-09-14",
-        "unity_price": 1.70,
-        "ideal_quantity": 300
-    },
-    {
-        "id": 93,
-        "itemName": "Cetoprofeno 100mg",
-        "category": "Anti-inflamatórios",
-        "quantity": 420,
-        "location": "Gaveta C3",
-        "expiryDate": "2026-07-28",
-        "unity_price": 0.34,
-        "ideal_quantity": 600
-    },
-    {
-        "id": 94,
-        "itemName": "Balança Analítica",
-        "category": "Equipamentos",
-        "quantity": 2,
-        "location": "Sala de Pesagem II35",
-        "expiryDate": null,
-        "unity_price": 1200.00,
-        "ideal_quantity": 3
-    },
-    {
-        "id": 95,
-        "itemName": "Sertralina 50mg",
-        "category": "Antidepressivos",
-        "quantity": 680,
-        "location": "Gaveta DD30",
-        "expiryDate": "2027-03-10",
-        "unity_price": 0.38,
-        "ideal_quantity": 900
-    },
-    {
-        "id": 96,
-        "itemName": "Pisseta 500ml",
-        "category": "Plásticos",
-        "quantity": 90,
-        "location": "Bancada Z26",
-        "expiryDate": null,
-        "unity_price": 2.00,
-        "ideal_quantity": 120
-    },
-    {
-        "id": 97,
-        "itemName": "Clonazepam 2mg",
-        "category": "Ansiolíticos",
-        "quantity": 290,
-        "location": "Armário Controlado EE31",
-        "expiryDate": "2026-10-25",
-        "unity_price": 0.44,
-        "ideal_quantity": 400
-    },
-    {
-        "id": 98,
-        "itemName": "Papel de Tornassol Azul",
-        "category": "Reagentes",
-        "quantity": 50,
-        "location": "Armário de Reagentes P16",
-        "expiryDate": null,
-        "unity_price": 0.09,
-        "ideal_quantity": 80
-    },
-    {
-        "id": 99,
-        "itemName": "Morfina 10mg/ml",
-        "category": "Analgésicos Opioides",
-        "quantity": 100,
-        "location": "Armário Controlado EE31",
-        "expiryDate": "2026-04-05",
-        "unity_price": 1.20,
-        "ideal_quantity": 150
-    },
-    {
-        "id": 100,
-        "itemName": "Centrífuga de Bancada",
-        "category": "Equipamentos",
-        "quantity": 3,
-        "location": "Sala de Centrifugação JJ36",
-        "expiryDate": null,
-        "unity_price": 950.00,
-        "ideal_quantity": 4
-    }
+  {
+    "id": 1,
+    "itemName": "Paracetamol 500mg",
+    "category": "Analgésicos",
+    "quantity": 150,
+    "ideal_quantity": 500,
+    "unity_price": 0.35,
+    "location": "Prateleira A1 - Farmácia",
+    "expiryDate": "2026-03-15"
+  },
+  {
+    "id": 2,
+    "itemName": "Dipirona 500mg",
+    "category": "Analgésicos",
+    "quantity": 80,
+    "ideal_quantity": 600,
+    "unity_price": 0.28,
+    "location": "Prateleira A1 - Farmácia",
+    "expiryDate": "2026-01-20"
+  },
+  {
+    "id": 3,
+    "itemName": "Ibuprofeno 600mg",
+    "category": "Anti-inflamatórios",
+    "quantity": 45,
+    "ideal_quantity": 300,
+    "unity_price": 0.85,
+    "location": "Prateleira A2 - Farmácia",
+    "expiryDate": "2025-12-10"
+  },
+  {
+    "id": 4,
+    "itemName": "Amoxicilina 500mg",
+    "category": "Antibióticos",
+    "quantity": 120,
+    "ideal_quantity": 400,
+    "unity_price": 1.20,
+    "location": "Refrigerador 1 - Farmácia",
+    "expiryDate": "2025-11-30"
+  },
+  {
+    "id": 5,
+    "itemName": "Azitromicina 500mg",
+    "category": "Antibióticos",
+    "quantity": 25,
+    "ideal_quantity": 200,
+    "unity_price": 2.50,
+    "location": "Refrigerador 1 - Farmácia",
+    "expiryDate": "2025-11-15"
+  },
+  {
+    "id": 6,
+    "itemName": "Omeprazol 20mg",
+    "category": "Antiácidos",
+    "quantity": 200,
+    "ideal_quantity": 450,
+    "unity_price": 0.45,
+    "location": "Prateleira B1 - Farmácia",
+    "expiryDate": "2026-06-20"
+  },
+  {
+    "id": 7,
+    "itemName": "Losartana 50mg",
+    "category": "Anti-hipertensivos",
+    "quantity": 90,
+    "ideal_quantity": 350,
+    "unity_price": 0.60,
+    "location": "Prateleira B2 - Farmácia",
+    "expiryDate": "2026-04-10"
+  },
+  {
+    "id": 8,
+    "itemName": "Metformina 850mg",
+    "category": "Antidiabéticos",
+    "quantity": 60,
+    "ideal_quantity": 400,
+    "unity_price": 0.55,
+    "location": "Prateleira B3 - Farmácia",
+    "expiryDate": "2026-02-28"
+  },
+  {
+    "id": 9,
+    "itemName": "Insulina Regular 100UI",
+    "category": "Antidiabéticos",
+    "quantity": 15,
+    "ideal_quantity": 80,
+    "unity_price": 45.00,
+    "location": "Refrigerador 2 - Farmácia",
+    "expiryDate": "2025-12-31"
+  },
+  {
+    "id": 10,
+    "itemName": "Soro Fisiológico 0,9% 500ml",
+    "category": "Soluções Intravenosas",
+    "quantity": 300,
+    "ideal_quantity": 1000,
+    "unity_price": 3.50,
+    "location": "Depósito Central - Setor A",
+    "expiryDate": "2027-08-15"
+  },
+  {
+    "id": 11,
+    "itemName": "Soro Glicosado 5% 500ml",
+    "category": "Soluções Intravenosas",
+    "quantity": 180,
+    "ideal_quantity": 800,
+    "unity_price": 4.20,
+    "location": "Depósito Central - Setor A",
+    "expiryDate": "2027-07-20"
+  },
+  {
+    "id": 12,
+    "itemName": "Luvas Cirúrgicas Estéreis M",
+    "category": "Material Hospitalar",
+    "quantity": 400,
+    "ideal_quantity": 2000,
+    "unity_price": 1.80,
+    "location": "Almoxarifado - Prateleira 1",
+    "expiryDate": "2028-12-31"
+  },
+  {
+    "id": 13,
+    "itemName": "Máscaras Cirúrgicas Descartáveis",
+    "category": "Material Hospitalar",
+    "quantity": 1500,
+    "ideal_quantity": 5000,
+    "unity_price": 0.45,
+    "location": "Almoxarifado - Prateleira 2",
+    "expiryDate": "2027-06-30"
+  },
+  {
+    "id": 14,
+    "itemName": "Seringas 10ml Descartáveis",
+    "category": "Material Hospitalar",
+    "quantity": 250,
+    "ideal_quantity": 1500,
+    "unity_price": 0.35,
+    "location": "Almoxarifado - Prateleira 3",
+    "expiryDate": "2029-03-15"
+  },
+  {
+    "id": 15,
+    "itemName": "Agulhas 25x7mm",
+    "category": "Material Hospitalar",
+    "quantity": 800,
+    "ideal_quantity": 3000,
+    "unity_price": 0.15,
+    "location": "Almoxarifado - Gaveta 1",
+    "expiryDate": "2030-01-01"
+  },
+  {
+    "id": 16,
+    "itemName": "Cateter Intravenoso 20G",
+    "category": "Material Hospitalar",
+    "quantity": 120,
+    "ideal_quantity": 600,
+    "unity_price": 2.80,
+    "location": "Almoxarifado - Gaveta 2",
+    "expiryDate": "2028-09-20"
+  },
+  {
+    "id": 17,
+    "itemName": "Gaze Estéril 7,5x7,5cm",
+    "category": "Material Hospitalar",
+    "quantity": 500,
+    "ideal_quantity": 2500,
+    "unity_price": 0.25,
+    "location": "Almoxarifado - Prateleira 4",
+    "expiryDate": "2027-11-30"
+  },
+  {
+    "id": 18,
+    "itemName": "Atadura de Crepom 15cm",
+    "category": "Material Hospitalar",
+    "quantity": 200,
+    "ideal_quantity": 800,
+    "unity_price": 1.50,
+    "location": "Almoxarifado - Prateleira 5",
+    "expiryDate": "2028-05-15"
+  },
+  {
+    "id": 19,
+    "itemName": "Álcool 70% 1L",
+    "category": "Antissépticos",
+    "quantity": 80,
+    "ideal_quantity": 300,
+    "unity_price": 8.50,
+    "location": "Almoxarifado - Setor Limpeza",
+    "expiryDate": "2026-10-10"
+  },
+  {
+    "id": 20,
+    "itemName": "Clorexidina 2% 1L",
+    "category": "Antissépticos",
+    "quantity": 35,
+    "ideal_quantity": 150,
+    "unity_price": 25.00,
+    "location": "Almoxarifado - Setor Limpeza",
+    "expiryDate": "2026-08-25"
+  },
+  {
+    "id": 21,
+    "itemName": "Povidine 10% 1L",
+    "category": "Antissépticos",
+    "quantity": 40,
+    "ideal_quantity": 200,
+    "unity_price": 18.00,
+    "location": "Almoxarifado - Setor Limpeza",
+    "expiryDate": "2026-07-15"
+  },
+  {
+    "id": 22,
+    "itemName": "Captopril 25mg",
+    "category": "Anti-hipertensivos",
+    "quantity": 180,
+    "ideal_quantity": 500,
+    "unity_price": 0.40,
+    "location": "Prateleira C1 - Farmácia",
+    "expiryDate": "2026-05-20"
+  },
+  {
+    "id": 23,
+    "itemName": "Enalapril 20mg",
+    "category": "Anti-hipertensivos",
+    "quantity": 95,
+    "ideal_quantity": 400,
+    "unity_price": 0.55,
+    "location": "Prateleira C1 - Farmácia",
+    "expiryDate": "2026-03-30"
+  },
+  {
+    "id": 24,
+    "itemName": "Sinvastatina 40mg",
+    "category": "Hipolipemiantes",
+    "quantity": 70,
+    "ideal_quantity": 350,
+    "unity_price": 0.90,
+    "location": "Prateleira C2 - Farmácia",
+    "expiryDate": "2026-02-15"
+  },
+  {
+    "id": 25,
+    "itemName": "Atorvastatina 20mg",
+    "category": "Hipolipemiantes",
+    "quantity": 55,
+    "ideal_quantity": 300,
+    "unity_price": 1.20,
+    "location": "Prateleira C2 - Farmácia",
+    "expiryDate": "2026-01-10"
+  },
+  {
+    "id": 26,
+    "itemName": "Diazepam 10mg",
+    "category": "Ansiolíticos",
+    "quantity": 40,
+    "ideal_quantity": 150,
+    "unity_price": 0.75,
+    "location": "Armário Controlados - Prateleira 1",
+    "expiryDate": "2025-12-20"
+  },
+  {
+    "id": 27,
+    "itemName": "Clonazepam 2mg",
+    "category": "Ansiolíticos",
+    "quantity": 30,
+    "ideal_quantity": 120,
+    "unity_price": 1.10,
+    "location": "Armário Controlados - Prateleira 1",
+    "expiryDate": "2025-11-25"
+  },
+  {
+    "id": 28,
+    "itemName": "Morfina 10mg Ampola",
+    "category": "Analgésicos Opioides",
+    "quantity": 25,
+    "ideal_quantity": 100,
+    "unity_price": 8.50,
+    "location": "Armário Controlados - Cofre",
+    "expiryDate": "2026-09-30"
+  },
+  {
+    "id": 29,
+    "itemName": "Tramadol 100mg",
+    "category": "Analgésicos Opioides",
+    "quantity": 35,
+    "ideal_quantity": 200,
+    "unity_price": 2.80,
+    "location": "Armário Controlados - Prateleira 2",
+    "expiryDate": "2026-04-15"
+  },
+  {
+    "id": 30,
+    "itemName": "Oxigênio Medicinal Cilindro 10L",
+    "category": "Gases Medicinais",
+    "quantity": 8,
+    "ideal_quantity": 30,
+    "unity_price": 180.00,
+    "location": "Sala de Gases - Setor 1",
+    "expiryDate": null
+  },
+  {
+    "id": 31,
+    "itemName": "Prednisolona 20mg",
+    "category": "Corticoides",
+    "quantity": 85,
+    "ideal_quantity": 300,
+    "unity_price": 0.95,
+    "location": "Prateleira D1 - Farmácia",
+    "expiryDate": "2026-06-10"
+  },
+  {
+    "id": 32,
+    "itemName": "Dexametasona 4mg Ampola",
+    "category": "Corticoides",
+    "quantity": 60,
+    "ideal_quantity": 250,
+    "unity_price": 1.50,
+    "location": "Refrigerador 3 - Farmácia",
+    "expiryDate": "2025-12-15"
+  },
+  {
+    "id": 33,
+    "itemName": "Heparina 5000UI Ampola",
+    "category": "Anticoagulantes",
+    "quantity": 45,
+    "ideal_quantity": 200,
+    "unity_price": 6.50,
+    "location": "Refrigerador 3 - Farmácia",
+    "expiryDate": "2026-03-20"
+  },
+  {
+    "id": 34,
+    "itemName": "Varfarina 5mg",
+    "category": "Anticoagulantes",
+    "quantity": 70,
+    "ideal_quantity": 250,
+    "unity_price": 0.80,
+    "location": "Prateleira D2 - Farmácia",
+    "expiryDate": "2026-07-25"
+  },
+  {
+    "id": 35,
+    "itemName": "Furosemida 40mg",
+    "category": "Diuréticos",
+    "quantity": 110,
+    "ideal_quantity": 400,
+    "unity_price": 0.50,
+    "location": "Prateleira D3 - Farmácia",
+    "expiryDate": "2026-05-30"
+  },
+  {
+    "id": 36,
+    "itemName": "Hidroclorotiazida 25mg",
+    "category": "Diuréticos",
+    "quantity": 130,
+    "ideal_quantity": 450,
+    "unity_price": 0.35,
+    "location": "Prateleira D3 - Farmácia",
+    "expiryDate": "2026-08-18"
+  },
+  {
+    "id": 37,
+    "itemName": "Ranitidina 150mg",
+    "category": "Antiácidos",
+    "quantity": 95,
+    "ideal_quantity": 350,
+    "unity_price": 0.65,
+    "location": "Prateleira E1 - Farmácia",
+    "expiryDate": "2026-04-22"
+  },
+  {
+    "id": 38,
+    "itemName": "Bromoprida 10mg",
+    "category": "Antieméticos",
+    "quantity": 75,
+    "ideal_quantity": 300,
+    "unity_price": 0.55,
+    "location": "Prateleira E2 - Farmácia",
+    "expiryDate": "2026-02-10"
+  },
+  {
+    "id": 39,
+    "itemName": "Ondansetrona 8mg",
+    "category": "Antieméticos",
+    "quantity": 30,
+    "ideal_quantity": 150,
+    "unity_price": 3.50,
+    "location": "Prateleira E2 - Farmácia",
+    "expiryDate": "2025-12-28"
+  },
+  {
+    "id": 40,
+    "itemName": "Vitamina B12 Ampola",
+    "category": "Vitaminas",
+    "quantity": 100,
+    "ideal_quantity": 300,
+    "unity_price": 2.20,
+    "location": "Refrigerador 4 - Farmácia",
+    "expiryDate": "2026-11-15"
+  },
+  {
+    "id": 41,
+    "itemName": "Complexo B Comprimido",
+    "category": "Vitaminas",
+    "quantity": 150,
+    "ideal_quantity": 500,
+    "unity_price": 0.40,
+    "location": "Prateleira E3 - Farmácia",
+    "expiryDate": "2027-01-20"
+  },
+  {
+    "id": 42,
+    "itemName": "Ácido Fólico 5mg",
+    "category": "Vitaminas",
+    "quantity": 120,
+    "ideal_quantity": 400,
+    "unity_price": 0.30,
+    "location": "Prateleira E3 - Farmácia",
+    "expiryDate": "2026-09-10"
+  },
+  {
+    "id": 43,
+    "itemName": "Termômetro Digital",
+    "category": "Equipamentos",
+    "quantity": 15,
+    "ideal_quantity": 50,
+    "unity_price": 25.00,
+    "location": "Almoxarifado - Setor Equipamentos",
+    "expiryDate": null
+  },
+  {
+    "id": 44,
+    "itemName": "Esfigmomanômetro Adulto",
+    "category": "Equipamentos",
+    "quantity": 12,
+    "ideal_quantity": 40,
+    "unity_price": 85.00,
+    "location": "Almoxarifado - Setor Equipamentos",
+    "expiryDate": null
+  },
+  {
+    "id": 45,
+    "itemName": "Estetoscópio",
+    "category": "Equipamentos",
+    "quantity": 18,
+    "ideal_quantity": 60,
+    "unity_price": 120.00,
+    "location": "Almoxarifado - Setor Equipamentos",
+    "expiryDate": null
+  },
+  {
+    "id": 46,
+    "itemName": "Teste Rápido COVID-19",
+    "category": "Diagnóstico",
+    "quantity": 50,
+    "ideal_quantity": 300,
+    "unity_price": 15.00,
+    "location": "Refrigerador 5 - Laboratório",
+    "expiryDate": "2025-11-30"
+  },
+  {
+    "id": 47,
+    "itemName": "Teste Rápido Gravidez",
+    "category": "Diagnóstico",
+    "quantity": 80,
+    "ideal_quantity": 200,
+    "unity_price": 8.50,
+    "location": "Almoxarifado - Prateleira 6",
+    "expiryDate": "2026-12-31"
+  },
+  {
+    "id": 48,
+    "itemName": "Glicosímetro Tiras 50un",
+    "category": "Diagnóstico",
+    "quantity": 25,
+    "ideal_quantity": 100,
+    "unity_price": 45.00,
+    "location": "Refrigerador 5 - Laboratório",
+    "expiryDate": "2026-06-30"
+  },
+  {
+    "id": 49,
+    "itemName": "Colírio Lubrificante",
+    "category": "Oftalmológicos",
+    "quantity": 60,
+    "ideal_quantity": 200,
+    "unity_price": 12.00,
+    "location": "Prateleira F1 - Farmácia",
+    "expiryDate": "2026-03-15"
+  },
+  {
+    "id": 50,
+    "itemName": "Pomada Cicatrizante 30g",
+    "category": "Dermatológicos",
+    "quantity": 90,
+    "ideal_quantity": 250,
+    "unity_price": 18.50,
+    "location": "Prateleira F2 - Farmácia",
+    "expiryDate": "2027-02-28"
+  }
 ]
